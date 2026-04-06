@@ -7,6 +7,9 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Heart, Flower2, Sparkles, MessageCircleHeart, CheckCircle2, XCircle } from 'lucide-react';
 
+import lubna1 from './lubna1.jpeg';
+import lubna2 from './lubna2.jpeg';
+
 // Floating element component for cute background effects
 interface FloatingElementProps {
   children: React.ReactNode;
@@ -136,7 +139,7 @@ export default function App() {
                   >
                     <div className="w-40 h-48 overflow-hidden bg-gray-100">
                       <img 
-                        src="lubna1.jpeg" 
+                        src={lubna1} 
                         alt="Lubna 1" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
@@ -155,7 +158,7 @@ export default function App() {
                   >
                     <div className="w-40 h-48 overflow-hidden bg-gray-100">
                       <img 
-                        src="lubna2.jpeg" 
+                        src={lubna2} 
                         alt="Lubna 2" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
